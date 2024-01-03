@@ -1,0 +1,135 @@
+@media (min-width: 1400px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (min-width: 2100px) {
+  html {
+    font-size: 200%;
+  }
+}
+@media (max-width: 1175px) {
+  html {
+    font-size: 55.5%;
+  }
+}
+@media (max-width: 1000px) {
+  .hero-section-title {
+    padding-top: 1rem;
+  }
+  .main-section-text {
+    padding: 0rem 8rem;
+  }
+  .main-section-last-row-text {
+    height: 40%;
+  }
+}
+@media (max-width: 896px) {
+  html {
+    font-size: 50.5%;
+  }
+}
+
+@media (max-width: 807px) {
+  html {
+    font-size: 45.5%;
+  }
+  .main-section-text {
+    padding: 0 5.5rem;
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  .main-section-last-row-text {
+    width: 70%;
+  }
+  .learn-more-btn-01,
+  .learn-more-btn-02::after {
+    bottom: 0%;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 55.5%;
+  }
+
+  .open-menu {
+    display: block;
+  }
+  .navigation {
+    padding: 2rem 2rem;
+  }
+  .main-menu {
+    clip-path: polygon(
+      0 9%,
+      93% 9%,
+      100% 0,
+      100% 70%,
+      100% 100%,
+      30% 100%,
+      0 100%,
+      0% 30%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+    height: 30rem;
+    background-color: #fff;
+    width: 90%;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    a {
+      color: $Very-dark-grayish-blue;
+      font-family: "barlow";
+    }
+  }
+  .hide {
+    opacity: 0;
+    visibility: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .contact {
+    background-color: $Yellow !important;
+  }
+  .hero-section {
+    background-image: url("/images/mobile/image-header.jpg");
+  }
+  .hero-section-title {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .img-desktop {
+    display: none;
+  }
+  .img-mobile {
+    display: block;
+  }
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+  .img-swap {
+    grid-row: 1/2;
+  }
+  .main-section-text {
+    padding: 5rem 5rem;
+  }
+  .cards {
+    flex-direction: column;
+    padding: 0 5rem;
+  }
+  .footer-image-desktop {
+    display: none;
+  }
+  .footer-image-mobile {
+    display: block;
+  }
+  .footer-images {
+    grid-template-columns: 1fr 1fr;
+  }
+}
