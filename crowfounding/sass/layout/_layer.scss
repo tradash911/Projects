@@ -1,0 +1,43 @@
+.layer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.507);
+  transition: all 0.5s;
+  display: grid;
+  grid-template-columns: minmax(3rem, 1fr) minmax(0, 75rem) minmax(3rem, 1fr);
+  padding-bottom: 20rem;
+
+  @include respond(small-phone) {
+    grid-template-columns: minmax(0.5rem, 1fr) minmax(0, 75rem) minmax(
+        0.5rem,
+        1fr
+      );
+  }
+}
+
+.body.layer--hidden > .layer {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+
+.layer--succes {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.507);
+  transition: all 0.2s;
+  display: grid;
+  grid-template-columns: minmax(1rem, 1fr) minmax(0, 54rem) minmax(1rem, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.body.layer--hidden-succes > .layer--succes {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s;
+}

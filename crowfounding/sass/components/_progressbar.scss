@@ -1,0 +1,15 @@
+.pricing__progress-bar {
+  grid-column: 1/-1;
+  height: 10px;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(60, 180, 172, 1) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: all 3s;
+
+  @include respond(phone) {
+    justify-self: stretch;
+  }
+}

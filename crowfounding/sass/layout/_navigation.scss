@@ -1,0 +1,29 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 8rem 0 8rem;
+
+  &__open-menu {
+    display: none;
+    height: 2rem;
+    width: 2rem;
+    border: none;
+
+    @include respond(phone) {
+      display: block;
+      background-color: transparent;
+      background-image: url("/images/icon-hamburger.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__logo {
+    @include respond(phone) {
+    }
+  }
+  @include respond(phone) {
+    padding: 4rem 3rem;
+  }
+}

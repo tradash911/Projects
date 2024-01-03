@@ -1,0 +1,55 @@
+.container {
+  background-color: var(--white);
+  border-radius: 8px;
+}
+
+.justify-center {
+  display: grid;
+  justify-content: center;
+}
+
+///Set inactive statement for product
+.out-of-stock {
+  opacity: 0.5;
+  pointer-events: none;
+  button {
+    background-color: #979797;
+    cursor: not-allowed;
+  }
+}
+
+/// Set active state for the card
+.modal__card.modal__card--active {
+  border: 2px solid var(--moderate-cyan);
+
+  .modal__card-hidden-area {
+    display: flex;
+  }
+  .modal__card-line {
+    display: block;
+  }
+}
+
+/// Open mobile menu
+.navigation.mobile-menu > .nav {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+/// Change the menu icon
+.navigation.mobile-menu > .navigation__open-menu {
+  background-image: url("/images/icon-close-menu.svg");
+}
+///Toggle bookmark on / off
+.cta__bookmark-btn.cta__bookmark-active > svg .cta__bookmark-icon {
+  &:nth-child(1) circle {
+    fill: var(--moderate-cyan);
+  }
+  &:nth-child(1) path {
+    fill: var(--white);
+  }
+}
+
+.cta__bookmark-btn.cta__bookmark-active > span {
+  color: var(--moderate-cyan);
+}

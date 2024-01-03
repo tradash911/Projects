@@ -1,0 +1,27 @@
+@mixin centerAbsolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin respond($device) {
+  /// 368px
+  @if $device == small-phone {
+    @media (max-width: 23em) {
+      @content;
+    }
+  }
+  ///  700px
+  @if $device == phone {
+    @media (max-width: 43.75em) {
+      @content;
+    }
+  }
+  /// 10000px
+  @if $device == tablet {
+    @media (max-width: 63.5em) {
+      @content;
+    }
+  }
+}

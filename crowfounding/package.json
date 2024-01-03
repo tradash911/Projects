@@ -1,0 +1,23 @@
+{
+  "name": "my_library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass sass/main.scss css/style.css -w",
+    "compile": "node-sass sass/main.scss css/style.comp.css",
+    "prefix": "postcss --use autoprefixer -b 'last 20 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress": "node-sass css/style.prefix.css css/style.min.css --output-style compressed",
+    "finish": "npm-run-all compile prefix compress"
+  },
+  "author": "Najzer Tamás",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "concat": "latest",
+    "node-sass": "latest",
+    "npm-run-all": "latest",
+    "postcss-cli": "latest",
+    "run": "latest"
+  }
+}

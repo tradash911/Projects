@@ -1,0 +1,11 @@
+.header {
+  background-image: url("/images/image-hero-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-row: 1/6;
+  grid-column: 1/-1;
+
+  @include respond(tablet) {
+    background-image: url("/images/image-hero-mobile.jpg");
+  }
+}

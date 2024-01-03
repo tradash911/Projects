@@ -1,0 +1,25 @@
+@import "abstract/costume-class";
+@import "abstract/varriables";
+@import "abstract/mixins";
+
+@import "base/base";
+@import "base/reset";
+
+@import "components/buttons";
+@import "components/cards";
+@import "components/cta";
+@import "components/menu";
+@import "components/modal-succes";
+@import "components/pricing";
+@import "components/progressbar";
+
+@import "layout/body";
+@import "layout/details";
+@import "layout/header";
+@import "layout/layer";
+@import "layout/main-section";
+@import "layout/modal";
+@import "layout/navigation";
+
+@import "pages/home";
+@import "pages/gallery";

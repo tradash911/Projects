@@ -1,0 +1,54 @@
+.pricing {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  row-gap: 3rem;
+  overflow-x: hidden;
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 6rem;
+  }
+
+  &__card:not(:nth-child(3)) {
+    border-right: 1px solid #979797;
+
+    @include respond(phone) {
+      border-right: none;
+    }
+  }
+
+  &__number {
+    display: block;
+    font-size: var(--fs-heading-big);
+    font-weight: var(--fw-bolder);
+    margin-bottom: 0.8rem;
+
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-size: var(--fs-small);
+    color: var(--dark-gray);
+
+    &--dashed {
+      @include respond(phone) {
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 8.7rem;
+          height: 1px;
+          background-color: #979797;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -3rem;
+        }
+      }
+    }
+  }
+}

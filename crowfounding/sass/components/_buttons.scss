@@ -1,0 +1,64 @@
+.button {
+  background-color: var(--moderate-cyan);
+  color: var(--white);
+  border: none;
+  padding: 1.3rem 3rem;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-bolder);
+
+  &--secondary {
+    font-size: var(--fs-very-small);
+
+    @media (min-width: 62.5rem) {
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: 62.5rem) {
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: var(--dark-cyan);
+  }
+}
+
+.modal__close-btn {
+  align-self: flex-end;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: 62.5rem) {
+    cursor: pointer;
+  }
+}
+
+.modal__card-toggle-btn {
+  grid-row: 2;
+  grid-column: 2;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+
+  @media (min-width: 62.5rem) {
+    cursor: pointer;
+  }
+}
+
+.modal__card-toggle-btn.active {
+  &::after {
+    content: "";
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--moderate-cyan);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

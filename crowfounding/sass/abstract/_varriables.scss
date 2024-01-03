@@ -1,0 +1,29 @@
+:root {
+  ///Colors
+  --moderate-cyan: hsl(176, 50%, 47%);
+  --dark-cyan: hsl(176, 72%, 28%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 48%);
+  --white: hsl(0, 0%, 100%);
+  ///Typography
+  --fs-tiny: 1.3rem;
+  --fs-very-small: 1.4rem;
+  --fs-small: 1.5rem;
+  --fs-normal: 1.6rem;
+  --fs-big: 1.8rem;
+  --fs-large: 2rem;
+  --fs-heading-normal: 2.4rem;
+  --fs-heading-medium: 2.8rem;
+  --fs-heading-big: 2.8rem;
+  --fs-heading-very-big: 3.2rem;
+  --fw-normal: 400;
+  --fw-bold: 500;
+  --fw-bolder: 700;
+}
+@media (max-width: 43.75rem) {
+  :root {
+    --fs-heading-medium: 2rem;
+    --fs-normal: 1.4rem;
+    --fs-large: 1.8rem;
+  }
+}
