@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="/sass/style.css">
+    <style>
+
+  </style>
+  </head>
+  <body>
+
+    <article class="schedule">
+      <header class="schedule__header">
+        <div class="schedule__header-title-wrapper">
+          <h1 class="schedule__header-title">todo</h1>
+          <div class="schedule__header-switch light-theme switch-icon"></div>
+        </div>
+
+        <div class="schedule__header-form-background">
+          <form action class="schedule__header-form light-theme form-bg"
+            onsubmit="return false">
+            <label for="input-field"
+              class='schedule__header-decoration'></label>
+            <input type="text" class="schedule__header-input"
+              value="Create a new to do..." onfocus="this.value=''"
+              id="input-field">
+            <input type="submit" class="schedule__header-btn" hidden>
+          </form>
+        </div>
+      </header>
+
+      <div class="schedule__wrapper">
+        <main class="schedule__main">
+        </main>
+        <footer class="schedule__footer">
+          <span class="schedule__footer-counter">0 item left</span>
+
+          <div class="schedule__footer-btn-group">
+            <button
+              class="button button--btn-group schedule__footer-view-all btn-active">All</button>
+            <button
+              class="button button--btn-group  schedule__footer-view-active">Active</button>
+            <button
+              class="button button--btn-group  schedule__footer-view-completed">Completed</button>
+          </div>
+          <button class="button schedule__footer-clear-btn">Clear
+            Completed</button>
+        </footer>
+      </div>
+
+      <!--    Mobile-nav -->
+      <div class="schedule__footer-btn-group-mobile">
+        <button
+          class="button button--btn-group schedule__footer-view-all btn-active">All</button>
+        <button
+          class="button button--btn-group  schedule__footer-view-active">Active</button>
+        <button
+          class="button button--btn-group  schedule__footer-view-completed">Completed</button>
+      </div>
+    </article>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
